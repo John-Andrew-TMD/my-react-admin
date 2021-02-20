@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import '@/assets/scss/base/base';
+.mobile-head-wrapper {
+  position: relative;
+  .mobile-head-bgbox{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 42.666666%;
+  }
+  .header-bgc {
+    width: 100%;
+  }
+  .mobile-header-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 px2rem(60);
+    width: 100%;
+    margin: 0 auto;
+    .logo-icon {
+      margin-top: px2rem(40);
+      width: px2rem(120);
+      height: px2rem(40);
+      @include iconBg('answer-bg@2x.png');
+    }
+    .logo-title {
+      margin: px2rem(40) 0;
+      font-size: px2rem(40);
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: px2rem(28);
+      letter-spacing: px2rem(8);
+    }
+    .download-btn {
+      margin-top: px2rem(10);
+      width: px2rem(220);
+      height: px2rem(60);
+      line-height: px2rem(60);
+      border-radius: px2rem(30);
+      border: 1px solid rgba(255, 255, 255, 1);
+      background: transparent;
+      color: #ffffff;
+      font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+      font-size: px2rem(24);
+      /deep/ .van-button__text {
+        height: 100%;
+        font-size: px2rem(24);
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

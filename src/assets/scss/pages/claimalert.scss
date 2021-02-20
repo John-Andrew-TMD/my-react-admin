@@ -1,0 +1,44 @@
+.claimalert {
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .alert-content {
+    flex: 1;
+    span {
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+    }
+    p {
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+}
+.claimClass {
+  .el-message-box__title {
+    text-align: left !important;
+    text-indent: 39px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    padding-top: 12px;
+  }
+}
+.claimiconClass {
+  width: 24px;
+  height: 24px;
+  background: url("@/assets/images/icons/warn.png") no-repeat;
+  background-size: contain;
+  top: -40%!important;
+}

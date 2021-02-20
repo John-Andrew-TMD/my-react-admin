@@ -1,0 +1,45 @@
+//~ Some base variables
+// Base resource url
+$imgUrl : "@/assets/images/imgs/";
+$iconUrl : "@/assets/images/icons/";
+$sprintUrl : "@/assets/images/icons/";
+// Flexible
+$baseFontSize : 75;
+$maxPcWidth   : 750px;
+
+// Color values
+$bgColor        : #F7F7FA;
+$mainColor      : #FF5B4B;
+$redColor       : rgb(241, 12, 12);
+$itemComBgc     : #FAFAFC;
+$navBorderColor : #F3F3F5;
+$basicFontColor : #303030;
+$pageBgColor    : #F7F7FA;
+$bodyBgColor    : #FFFFFF;
+$tableTrColor   : #F5F5F7;
+$popBgColor     : #000000;
+$backgroundColor: #FAD232;
+$lineColor      : #DBDBDB;
+$btnBg          : #409EFF;
+$linkColor      : #409EFF;
+$blueColor      : #4F79F5;
+$basicColor     : #333333;
+$fontWhiteColor : #FFFFFF;
+$basicTextColor : #323233;
+$mainTitColor   : #000000;
+$grayColor      : #9B9B9B;
+$grayTextColor  : #666666;
+$tipColor       : #777777;
+$grayConColor   : #999999;
+$basicFontSize  : 13;
+$comFontSize    : 16;
+
+// Layer specification
+$zidxContent  : 0;         // 内容层，在最底层
+$zidxNav      : 100;       // 导航层，次之
+$zidxPopMask  : 900;       // 弹出内容panel蒙层
+$zidxPopPanel : 3000;      // 弹出内容panel
+$zidxMask     : 1000;      // 蒙层
+$zidxPopout   : 5000;      // 弹出层,最顶上
+$zidxTop      : 10000;     // 更高层
+

@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import '@/assets/scss/base/base';
+.mobile-footer-wrapper{
+  .about-us{
+    border-bottom: 1px solid #666666;
+    padding: 30px;
+  }
+  .about-desc{
+    color: #ffffff;
+    font-size: px2rem(14);
+    line-height: px2rem(40);
+  }
+   background-color: #292c33;
+   .mobile-footer-t{
+     padding: px2rem(60) px2rem(60) px2rem(40) px2rem(60)
+   }
+  .link-title {
+    font-size: px2rem(16);
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: px2rem(32);
+    margin-bottom: px2rem(48);
+  }
+  .company-info {
+    font-size: px2rem(24);
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: px2rem(36);
+    >p {
+      opacity: 0.6;
+    }
+  }
+  .company-name {
+    font-size: px2rem(14);
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: px2rem(28);
+    margin-bottom: px2rem(32);
+  }
+  .mobile-footer-b{
+    padding: 0 px2rem(60) px2rem(60) px2rem(60)
+  }
+  .mobile-footer__qrcode{
+    display: flex;
+    align-items: center;
+    .qrcode-img{
+      width: px2rem(120);
+      height: px2rem(144);
+      margin-right: px2rem(40);
+    }
+  }
+  .mobile-webtax-filing{
+    box-shadow:0px -1px 0px 0px rgba(255,255,255,0.15);
+    p , a {
+      text-align: center;
+      // width:px2rem(340);
+      width: 90%;
+      margin: 0 auto;
+      padding: px2rem(12) 0;
+      font-size: px2rem(24);
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:px2rem(36);
+      opacity: 0.6;
+    }
+  }
+}

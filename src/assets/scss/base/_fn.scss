@@ -1,0 +1,30 @@
+//~ Some Functions
+@function px2rem($px){
+  @return $px/$baseFontSize + rem;
+}
+@function rem2px($rem){
+  @return $rem*$baseFontSize + px;
+}
+@function rpx($rem){
+  @return $rem + px;
+}
+@function furl($uri){ //文件路径
+  @return $baseResUrl + $uri;
+}
+@function vurl($file){ //图片路径函数
+  @return $baseResDir +"/" + $file;
+}
+
+//~ Some Functions
+@function imgBgUrl($uri){ //icon文件路径
+  @return $imgUrl + $uri;
+}
+
+@function iconBgUrl($uri){ //icon文件路径
+  @return $iconUrl + $uri;
+}
+
+@function sprintUrl($uri){ //icon文件路径
+  @return $sprintUrl + $uri;
+}
+

@@ -1,0 +1,436 @@
+@charset "utf-8";
+@import "@/assets/scss/base/base";
+.article-detail-wrapper {
+  .zw-block {
+    width: 100%;
+    height: 96px;
+    background-color: #ffffff;
+  }
+  .head-bar {
+    background-color: #ffffff;
+    padding: 24px 0;
+    .logo {
+      width: 48px;
+      height: 48px;
+      @include iconBg("logo@2x.png");
+      margin-right: 16px;
+    }
+    .logo-title {
+      font-size: 28px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-right: 10px;
+    }
+    .web-slogan {
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 28px;
+      padding-left: 10px;
+      border-left: 1px solid #eeeeee;
+    }
+  }
+  .num-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.25);
+    line-height: 20px;
+    min-width: 60px;
+  }
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  .up {
+    @include iconBg("icon-arrow-up@2x.png");
+  }
+  .down {
+    @include iconBg("icon-arrow-down@2x.png");
+  }
+  .toOne {
+    @include iconBg("icon-toOne@2x.png");
+  }
+  .check-box {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 20px;
+  }
+
+}
+
+.article-detail-wrapper {
+  background-color: #f0f1f5;
+  .bulletin {
+    h1 {
+      font-size: 26px !important;
+      font-weight: bold;
+      margin: 40px 0 !important;
+    }
+    h2 {
+      font-size: 22px !important;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    .webtax-h1-style {
+      font-size: 26px !important;
+      font-weight: bold;
+      margin: 40px 0 !important;
+    }
+    .webtax-h2-style {
+      font-size: 22px !important;
+      font-weight: bold;
+    }
+    .webtax-h3-style {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+    .webtax-p1-style {
+      font-size: 16px !important;
+      line-height: 1.5 !important;
+    }
+    .webtax-p2-style {
+      font-size: 16px !important;
+      line-height: 1.5 !important;
+      font-weight: bold;
+    }
+    div[class*="webtax-tksx"], p[class*="webtax-tksx"]{
+      color: #999999 !important;
+      background-color: #f5f5f5 !important;
+    }
+    div[class~="webtax-tksx"], p[class~="webtax-tksx"]{
+      color: #999999 !important;
+      background-color: #f5f5f5 !important;
+    }
+    table {
+      max-width: 100% !important;
+    }
+  }
+
+  .content {
+    background-color: #fff;
+    padding: 48px 72px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 32px;
+  }
+  .no-article {
+    width: 500px;
+    height: 500px;
+    @include imgBg("empty-bgicon@2x.png");
+  }
+
+  .head-tab {
+    li {
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 22px;
+      cursor: pointer;
+    }
+    li.active {
+      position: relative;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 22px;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 3px;
+        background-color: #ff5948;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+    }
+  }
+  .link-box {
+    margin-top: 24px;
+  }
+  .link-title {
+    width: 80px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 24px;
+  }
+
+  .link-ul .link-item {
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(79, 121, 245, 1);
+    line-height: 24px;
+    text-align: left;
+    a {
+      color: rgba(79, 121, 245, 1);
+      text-align: left;
+    }
+  }
+
+  .no-found {
+    font-size: 20px;
+  }
+  .font-size {
+    cursor: pointer;
+  }
+  .active {
+    font-weight: bold;
+  }
+  .goBack {
+    position: relative;
+    bottom: 60px;
+  }
+
+  .head-content {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .article-detail_tit {
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 40px;
+    text-align: center;
+  }
+  .article-type {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 17px;
+  }
+  .article-Interpretation {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(79, 121, 245, 1);
+    line-height: 17px;
+  }
+  .height_auto {
+    height: auto;
+  }
+
+  .docitem {
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .docitem:last-child::after {
+    border-bottom: none;
+  }
+  .annex {
+    background: rgba(245, 245, 245, 1);
+    border-radius: 4px;
+    padding: 10px 15px 0 15px;
+    box-sizing: border-box;
+  }
+}
+
+.qrcode-box {
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto 0 auto;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    line-height: 22px;
+  }
+}
+.qrcode-img {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+}
+
+
+.search-wrapper {
+  height: 72px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  .el-input-group__append, .el-input-group__prepend {
+    border: none;
+  }
+  .input-with-select, .search-box {
+    width: 344px;
+  }
+  .search-box {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 0 24px;
+    position: relative;
+    background-color: #f0f1f5;
+    transition: all 0.5s ease-in-out;
+    animation: all 1s ease-in-out;
+    .el-input__inner {
+      background-color: #f0f1f5;
+      border: none;
+      padding-left: 30px;
+    }
+    .icon-search {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      @include iconBg("srarch-icon@2x.png");
+    }
+  }
+  .sear-btn {
+    background-color: rgba(255, 89, 72, 1) !important;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    // opacity: 0.65;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1) !important;
+    border: none;
+  }
+  .head-btns {
+    flex: 1;
+    text-align: center;
+  }
+}
+#share-bar {
+  .icons-btn {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  // 复制
+  .icon-copy {
+    @include iconBg('icon-copy@2x.png', cover)
+  }
+  .copy-hover:hover .icon-copy {
+    @include iconBg('icon-copy-h@2x.png', cover)
+  }
+  // 打印
+  .pritor-icon {
+    @include iconBg('print-icon@2x.png', cover)
+  }
+  .pritor-hover:hover .pritor-icon{
+    @include iconBg('print-icon-h@2x.png', cover)
+  }
+  // 收藏
+  .collect-icon {
+    @include iconBg('collect-icon@2x.png', cover)
+  }
+  .collect-hover:hover .collect-icon {
+    @include iconBg('collect-icon-h@2x.png', cover)
+  }
+  .collect-icon-h {
+    @include iconBg('collect-icon-h@2x.png', cover)
+  }
+  // 下载word
+  .down-word-icon {
+    @include iconBg('down-word-icon@2x.png', cover)
+  }
+  .downloadw-hover:hover .down-word-icon{
+    @include iconBg('down-word-icon-h@2x.png', cover)
+  }
+  // 下载pdf
+  .down-pdf-icon {
+    @include iconBg('down-pdf@2x.png', cover)
+  }
+  .downloadp-hover:hover .down-pdf-icon{
+    @include iconBg('down-pdf-h@2x.png', cover)
+  }
+  // 发送邮箱
+  .send-email-icon {
+    @include iconBg('send-email-icon@2x.png', cover)
+  }
+  .send-hover:hover .send-email-icon {
+    @include iconBg('send-email-icon-h@2x.png', cover)
+  }
+  // 分享
+  .share-wechart-icon {
+    @include iconBg('share-wechart-icon@2x.png', cover)
+  }
+  .share-hover:hover .share-wechart-icon{
+    @include iconBg('share-wechart-icon-h@2x.png', cover)
+  }
+  // 纠错
+  .error-correction-icon {
+    @include iconBg('error-correction-icon@2x.png', cover)
+  }
+  .correction-hover:hover .error-correction-icon {
+    @include iconBg('error-correction-icon-h@2x.png', cover)
+  }
+}
+
+*[data-dynamicevent *= "getWritNo"] {
+  cursor: pointer;
+}
+.item-tips {
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 20px;
+}
+.item-tip{
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 17px;
+}
+.copy-hover:hover .item-tip {
+  color: #333333;
+} 
+.collect-hover:hover .item-tip {
+  color: #333333;
+} 
+.downloadw-hover:hover .item-tip {
+  color: #333333;
+} 
+.downloadp-hover:hover .item-tip {
+  color: #333333;
+} 
+.send-hover:hover .item-tip {
+  color: #333333;
+} 
+.share-hover:hover .item-tip {
+  color: #333333;
+} 
+.pritor-hover:hover .item-tip {
+  color: #333333;
+} 
+.correction-hover:hover .item-tip {
+  color: #333333;
+} 
+.wechart-share {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  @include iconBg('wechart-share-icon@2x.png')
+}
+.link-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  @include iconBg('link-icon-1@2x.png')
+}

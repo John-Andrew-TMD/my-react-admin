@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import "@/assets/scss/base/base";
+.comp-list-box {
+  padding: 0 24px;
+  margin-bottom: 48px;
+  background-color: #fff;
+}
+
+.el-page-box {
+  background-color: #fff;
+  padding: 24px 0;
+}
+
+// 财税资讯
+.news-wrapper .el-input__prefix .el-icon-search {
+  position: relative;
+  top: 2px;
+}
+.nav-search-bar .el-input__icon {
+  line-height: 32px;
+}
+.account-index-wrapper {
+  .el-input__icon {
+    line-height: normal;
+  }
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import '@/assets/scss/base/base';
+.webtax-info-bgc--box{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 66.666666%;
+  background: #eee
+}
+.webtax-info-bgc{
+  width: 100%;
+}
+.pb75{
+  padding-bottom: 74.9333333%;
+  height: 0;
+}
+.pb100{
+  padding-bottom: 100%;
+  height: 0;
+}
+.pb110{
+  padding-bottom: 110.266666%;
+  height: 0;
+}
+.main-wrapper_box1{
+  position: relative;
+}
+.main-wrapper_box-content1{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: px2rem(40);
+}
+.p80{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-wrapper_box-content{
+  padding: px2rem(40);
+}
+.main-content--title{
+  font-size: px2rem(40);
+  font-weight: bold;
+  padding-bottom: px2rem(30);
+}
+.main-wrapper-content-desc{
+  font-size: px2rem(28);
+  line-height: px2rem(40);
+}
+.bgc-gray{
+  background-color: #F5F7FA;
+}
+.tax-types-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tax-types{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-top: px2rem(48);
+  padding-left: px2rem(48);
+}
+.icon-tax-type{
+  display: inline-block;
+  width: px2rem(64);
+  height: px2rem(64);
+  margin-right: px2rem(32);
+}
+.icon-grssd{
+  @include iconBg('icon-grsds@2x.png')
+}
+.icon-qysds{
+  @include iconBg('icon-qysds@2x.png')
+}
+.icon-zzs{
+  @include iconBg('icon-zzs@2x.png')
+}
+.icon-tdzzs{
+  @include iconBg('icon-tdzzs@2x.png')
+}
+.icon-gjss{
+  @include iconBg('icon-gjss@2x.png')
+}
+.icon-zhsz{
+  @include iconBg('icon-zhsz@2x.png')
+}
