@@ -335,6 +335,7 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         '@': path.resolve('src'),
+        '@api': path.resolve('src/api'),
         ...(modules.webpackAliases || {}),
       },
       plugins: [
@@ -394,7 +395,7 @@ module.exports = function (webpackEnv) {
                   options: {
                     // Provide path to the file with resources
                     resources: [
-                      path.resolve(__dirname, './../src/assets/scss/main.scss'),
+                      path.resolve(__dirname, './../src/styles/main.scss'),
                     ],
 
                     // Or array of paths
@@ -460,6 +461,11 @@ module.exports = function (webpackEnv) {
             },
             // Process any JS outside of the app with Babel.
             // Unlike the application JS, we only compile the standard ES features.
+            {
+              test: /\.tsx?$/,
+              exclude: /node_modules/,
+              loader: 'awesome-typescript-loader',
+            },
             {
               test: /\.(js|mjs)$/,
               exclude: /@babel(?:\/|\\{1,2})runtime/,

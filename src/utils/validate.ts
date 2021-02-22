@@ -1,0 +1,1 @@
+export const validate_password:RegExp =  /^[0-9]*$/

@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import "./assets/scss/main.scss";
-import Home from './pages/Home';
-import About from './pages/About';
-import News from './pages/News';
+import "./styles/main.scss";
+import "./styles/common.css";
+import Login from './views/login/index';
 import { Provider } from 'react-redux';
 import store from './store';
 import {
   Route,
   Switch,
-  NavLink,
-  Link,
-  Router,
   BrowserRouter,
 } from 'react-router-dom';
 
@@ -22,7 +18,7 @@ class App extends Component<any, any> {
       lastName: '2222',
     };
   }
-  componentWillMount(){
+  UNSAFE_componentWillMount(){
     console.log("UNSAFE_componentWillMount")
   }
   componentDidMount(){
@@ -40,9 +36,7 @@ class App extends Component<any, any> {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route component={Home} exact path="/" />
-            <Route component={About} path="/about" />
-            <Route component={News} path="/news" />
+            <Route component={Login} exact path="/" />
           </Switch>
         </BrowserRouter>
       </Provider>
